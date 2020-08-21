@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        var time=parseInt(localStorage.getItem("time"));
+        for(i=0;i<=time;i++){
+                (function(i){
+                    setTimeout(function(){
+                        $("#time").html(time);
+                        time--;
+                        
+                    },i*60000)
+                }(i));
+                console.log(i)
+                
+            }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="page">
+        <div class="time">
+            <h2 id="time"></h2><h2> minutes left</h2>
+        </div>
+        <div class="pno"></div>
+        <div class="ques">
+            <span class="q1">
+                <h3 class="tit1">Ques 1</h3>
+                <input type="radio"><h3 id ="op1"class="op1">Option1</h3>
+                <input type="radio"><h3 id ="op2"class="op2">Option2</h3>
+                <input type="radio"><h3 id ="op3"class="op3">Option3</h3>
+                <input type="radio"><h3 id ="op4"class="op4">Option4</h3>
+            </span>
+            <span class="q2">
+                <h3 class="tit1">ques 1</h3>
+                <input type="radio"><h3 id ="op1"class="op1">Option1</h3>
+                <input type="radio"><h3 id ="op2"class="op2">Option2</h3>
+                <input type="radio"><h3 id ="op3"class="op3">Option3</h3>
+                <input type="radio"><h3 id ="op4"class="op4">Option4</h3>
+            </span>
+            <span class="q3">
+                <h3 class="tit1">ques 3</h3>
+                <input type="radio"><h3 id ="op1"class="op1">Option1</h3>
+                <input type="radio"><h3 id ="op2"class="op2">Option2</h3>
+                <input type="radio"><h3 id ="op3"class="op3">Option3</h3>
+                <input type="radio"><h3 id ="op4"class="op4">Option4</h3>
+            </span>
+            <span class="q4">
+                <h3 class="tit1">ques 4</h3>
+                <input type="radio"><h3 id ="op1"class="op1">Option1</h3>
+                <input type="radio"><h3 id ="op2"class="op2">Option2</h3>
+                <input type="radio"><h3 id ="op3"class="op3">Option3</h3>
+                <input type="radio"><h3 id ="op4"class="op4">Option4</h3>
+            </span>
+            <span class="q5">
+                <h3 class="tit1">ques 5</h3>
+                <input type="radio"><h3 id ="op1"class="op1">Option1</h3>
+                <input type="radio"><h3 id ="op2"class="op2">Option2</h3>
+                <input type="radio"><h3 id ="op3"class="op3">Option3</h3>
+                <input type="radio"><h3 id ="op4"class="op4">Option4</h3>
+            </span>
+            
+        </div>
+        <span id="button">
+            <button id = "back">Back</button>
+            <button id = "next">Next</button>
+        </span>
+    </div>
+    <script src="quiz4.js"></script>
+</body>
+</html>
